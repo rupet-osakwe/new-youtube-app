@@ -1,0 +1,338 @@
+.App {
+	text-align: center;
+}
+.logo {
+	fill: red;
+}
+.appName {
+	font-size: 16px;
+	margin-left: 0px;
+	font-family: impact;
+}
+.sup {
+	color: #636262;
+	font-size: 12px;
+	font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+}
+.searchBarContainer {
+	display: flex;
+}
+.inputAndLense {
+	border: 2px solid rgb(187, 186, 186);
+	height: fit-content;
+	width: fit-content;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	border-radius: 25px;
+}
+.inputBox {
+	width: 440px;
+	height: 20px;
+	border: none;
+	outline: none;
+	border-right: 2px solid rgb(187, 186, 186);
+	margin: 10px;
+}
+.navBar {
+	display: flex;
+	justify-content: space-between;
+	padding-top: 5px;
+	position: fixed;
+	top: 0px;
+	background-color: white;
+	width: 100%;
+	border-bottom: 10px solid white;
+}
+.iconButton {
+	width: fit-content;
+	height: fit-content;
+	padding: 7px;
+	background-color: white;
+	border: none;
+	outline: none;
+}
+.icon {
+	width: 24px;
+	height: 24px;
+	font-size: 1.2rem;
+}
+
+.iconButton:hover {
+	background-color: #e1dddd;
+	border-radius: 50%;
+	cursor: pointer;
+}
+.all-Button {
+	background-color: black;
+	color: white;
+	border: none;
+	outline: none;
+	margin-left: 15px;
+}
+.inactiveAllButton {
+	background-color: white;
+	color: black;
+}
+.channelButtons {
+	display: flex;
+	position: fixed;
+	flex-wrap: nowrap;
+	gap: 7px;
+	background-color: white;
+	top: 50px;
+	left: 3rem;
+	padding-top: 7px;
+	border-top: 10px solid white;
+}
+.programme:hover {
+	cursor: pointer;
+	background-color: rgb(230, 226, 226);
+}
+.programme {
+	cursor: pointer;
+	border: none;
+	outline: none;
+	border-radius: 2px;
+	background-color: white;
+	height: 30px;
+	border-radius: 7px;
+}
+.ActiveProg {
+	background-color: black;
+	color: white;
+	border-radius: 7px;
+}
+.ActiveProg:hover {
+	background-color: black;
+	border-radius: 7px;
+	color: white;
+}
+.sideBar {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	align-items: center;
+	position: fixed;
+	top: 5.5rem;
+	margin-left: 0.7rem;
+	width: 50px;
+	height: 280px;
+	background-color: white;
+}
+.sideElement {
+	font-size: 1.5rem;
+}
+.sideElement-Button {
+	width: 50px;
+	height: 50px;
+	margin: 3px;
+	border: none;
+	outline: none;
+	background-color: white;
+	font-size: 0.6rem;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+.zedSideBar {
+	width: 50px;
+	height: 50px;
+	font-size: 0.6rem;
+	border: none;
+	outline: none;
+	background-color: white;
+}
+.stopWatch {
+	display: flex;
+	position: fixed;
+	bottom: 3px;
+	right: 1px;
+	width: 152px;
+	height: 40px;
+	background-color: pink;
+}
+.screensHolder {
+	margin-top: 7rem;
+	width: 100%;
+	margin-left: 4rem;
+}
+.screenList {
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
+	justify-content: center;
+	flex-basis: 35%;
+	column-gap: 1.3rem;
+	row-gap: 0.4rem;
+	line-height: 15px;
+}
+.screen {
+	width: 370px;
+	height: 200px;
+	border-radius: 20px;
+}
+.screen:hover {
+	border-radius: 0px;
+	cursor: pointer;
+}
+.videoInfo {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	margin-top: 0px;
+}
+.vid-title {
+	width: 280px;
+	display: flex;
+	flex-direction: column;
+	padding-top: 0px;
+	margin-top: 1px;
+	margin-bottom: 1.5px;
+	font-size: 15px;
+}
+.channelName {
+	margin-top: 0px;
+	text-transform: capitalize;
+	font-size: 13px;
+	font-weight: bold;
+	color: #555454;
+	font-family: sans-serif;
+}
+.pubTime {
+	font-size: 12px;
+	color: #555454;
+	font-family: sans-serif;
+}
+.hidden {
+	display: none;
+	visibility: hidden;
+}
+.visible {
+	display: block;
+	visibility: visible;
+}
+.arrowLeft {
+	display: none;
+	visibility: hidden;
+}
+.smallScreen-microphone {
+	display: none;
+	visibility: hidden;
+	border-radius: 50%;
+}
+.desktop-microphone-button:hover,
+.smallScreen-microphone:hover {
+	cursor: pointer;
+	background-color: #e1dddd;
+}
+.smallScreenLense-btn {
+	display: none;
+	visibility: hidden;
+}
+.show-toggle-button {
+	display: none;
+	width: 40px;
+	height: 40px;
+	margin-right: 10px;
+	margin-top: 7px;
+}
+
+.hide-toggle-button {
+	display: none;
+}
+.desktop-microphone-button {
+	display: block;
+	border: none;
+	outline: none;
+	height: 38px;
+	width: 38px;
+	border-radius: 50%;
+	margin-left: 15px;
+	background-color: white;
+}
+.microphone {
+	font-size: 1.1rem;
+	width: 17px;
+	height: 37px;
+}
+.lense-icon-button {
+	height: 35px;
+	width: 35px;
+	margin-right: 8px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+@media screen and (max-width: 768px) {
+	/* .hidden {
+		display: block;
+		visibility: visible;
+	}
+	.visible {
+		display: none;
+		visibility: hidden;
+	} */
+	.desktop-microphone {
+		display: none;
+	}
+	.arrowLeft {
+		display: block;
+		visibility: visible;
+	}
+	.show-toggle-button {
+		display: flex;
+	}
+	.hide-toggle-button {
+		display: none;
+	}
+	.inputAndLense {
+		display: none;
+	}
+	.bigScreenLense-btn {
+		display: block;
+	}
+	.smallScreenLense-btn {
+		display: flex;
+		visibility: visible;
+	}
+	.smallScreen-microphone {
+		display: block;
+		visibility: visible;
+		border: none;
+		outline: none;
+		background-color: white;
+	}
+	.desktop-microphone-button {
+		display: none;
+		border: none;
+		outline: none;
+		background-color: white;
+	}
+	.rightPart {
+		display: flex;
+		margin-right: 15px;
+	}
+	.sideBar {
+		display: none;
+		visibility: hidden;
+	}
+	.screensHolder {
+		margin-top: 10rem;
+	}
+	.channelButtons {
+		left: 0.5rem;
+	}
+	.microphone {
+		display: block;
+		visibility: visible;
+		height: 35px;
+		width: 18px;
+		font-weight: 5px;
+		font-size: 2px;
+		margin-left: 15px;
+	}
+}
